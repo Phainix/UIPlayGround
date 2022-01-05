@@ -1,0 +1,28 @@
+#main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.product-selector {
+    flex: 0 0 8rem;
+    height: 100%;
+}
+
+.active-product {
+    display: flex;
+    height: 100%;
+    flex: 1;
+}
+
+.product-desc, .product-img {
+    flex: 0 0 50%;
+}
+
+.product-desc {
+    background-color: red;
+}
+
+.product-img {
+    background-color: brown;
+}
