@@ -1,3 +1,7 @@
+body, button, input {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
 #main {
     height: 100vh;
     width: 100vw;
@@ -5,7 +9,7 @@
 }
 
 .product-selector {
-    flex: 0 0 8rem;
+    flex: 0 0 6rem;
     height: 100%;
 }
 
@@ -20,9 +24,85 @@
 }
 
 .product-desc {
-    background-color: red;
+    background-color: lightcoral;
+    padding: 2rem 4rem;
 }
 
 .product-img {
     background-color: brown;
 }
+
+nav#desc-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    overflow: hidden;
+    position: relative;
+    width: 1.5rem;
+    height: 3rem;
+}
+
+span.logo {
+    width: 3rem;
+    height: 3rem;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+    display: flex;
+    border-right: 1.5rem solid black;
+    position: absolute;
+    left: -1.5rem;
+}
+
+input#query, button#search-btn {
+    border: none;
+    background: transparent;
+    color: #000;
+}
+
+input#query {
+    padding: 0.6rem 0.8rem;
+    padding-right: 2.5rem;
+    border: 1px solid transparent;
+    border-radius: 2rem;
+}
+
+button#search-btn {
+    width: 2rem;
+    cursor: pointer;
+    position: absolute;
+    right: 0.6rem;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    display: inline-flex;
+}
+
+button#search-btn > svg {
+    width: 100%;
+    height: 100%;
+}
+
+.input-group {
+    display: flex;
+    position: relative;
+}
+
+input#query:focus {
+    outline: none;
+    border-color: black;
+}
+
+input:-internal-autofill-selected {
+}
+
+.nav-list {
+    display: flex;
+}
+
+span.nav-item {
+    padding: 0.6rem;
+}
+

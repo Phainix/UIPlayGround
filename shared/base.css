@@ -6,10 +6,12 @@ html, body {
     overflow-x: hidden;
     overflow-y: auto;
     display: block;
-    font-size: 14px;
-    /* font-family: 'Quicksand', sans-serif; */
     letter-spacing: .3px;
     line-height: 1;
+}
+
+body, input, select, textarea, button {
+    font-size: 16px;
 }
 
 a {
@@ -31,7 +33,28 @@ a {
     box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5,h6, p, ul, ol {
+h1, h2, h3, h4, h5, h6, p, ul, ol {
     margin: 0;
     padding: 0;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: inherit;
+    /* Firefox */
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: inherit;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: inherit;
+}
+
+input {
+    background: none;
 }
