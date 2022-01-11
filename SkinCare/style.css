@@ -1,5 +1,9 @@
+body, input, select, textarea, button {
+    font-size: 18px;
+}
+
 body, button, input {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
 }
 #main {
@@ -19,23 +23,34 @@ body, button, input {
     flex: 1;
 }
 
-.product-desc, .product-img {
+.product-section {
     flex: 0 0 50%;
+    padding: 2rem 4rem;
 }
 
 .product-desc {
     background-color: lightcoral;
-    padding: 2rem 4rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .product-img {
     background-color: brown;
 }
 
-nav#desc-nav {
+.nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+}
+
+nav#desc-nav {
+    justify-content: space-between;
+}
+
+nav#img-nav {
+    color: white;
+    justify-content: flex-end;
 }
 
 .brand {
@@ -106,3 +121,43 @@ span.nav-item {
     padding: 0.6rem;
 }
 
+.nav-btn {
+    color: #fff;
+    background: none;
+    margin: 0rem 0rem 0rem 2rem;
+    padding: .4rem 2rem;
+    border: 1px solid #fff;
+    border-radius: .2rem;
+}
+
+.product-desc-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.product-name {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 1.3;
+    letter-spacing: 1px;
+    margin: 2rem 0rem;
+}
+
+.product-stat {
+    display: flex;
+    align-items: center;
+}
+
+.product-stat > * {
+    margin-right: .8rem;
+}
+
+.product-stat > img {
+    width: 1.4rem;
+}
+
+.product-rating > span {
+    margin: 0rem .2rem;
+}
